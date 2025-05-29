@@ -1,0 +1,17 @@
+# Configuration file for Global Food Price Trends Forecasting
+
+data:
+  raw_data_path: data/raw/
+  processed_data_path: data/processed/
+  output_path: outputs/
+  figures_path: outputs/figures/
+  reports_path: outputs/reports/
+
+model:
+  type: prophet
+  forecast_horizon: 12  # months
+  test_size: 0.2
+
+visualization:
+  style: seaborn
+  save_figures: true
